@@ -1,4 +1,4 @@
-FROM alibaba-cloud-linux-3-registry.cn-hangzhou.cr.aliyuncs.com/alinux3/alinux3:latest
+FROM --platform=${TARGETPLATFORM:-linux/amd64} alibaba-cloud-linux-3-registry.cn-hangzhou.cr.aliyuncs.com/alinux3/alinux3:latest
 
 # 设置上海时区
 ENV TZ='Asia/Shanghai'
